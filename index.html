@@ -3,35 +3,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library book</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    
-    <div class="title">
-        <h1>My Baby's Book Library</h1>
-    </div>
-    
-    <!-- Where the books will be shown -->
-    <div class="books">
+   
+  <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+
+
+
+      <!-- <button onclick="myFunction()">Try it</button> -->
+      <input type="submit" id="btn" onclick="myFunction()">
+      <button onclick="clearBtn()">Clear</button>
+
+      <form id="form">
+      <p>
+        Book title:
+        <input type="text" id="txt1" name="text1" value=""  ><br>
+        Author:
+        <input type="text" id="txt2" name="text2" value="" ><br>
+        Page:
+        <input type="number" id="quantity"value="" min="1"><br>
+        Read:
+        <label class="switch">
+          <input type="checkbox" id="togBtn">
+          <span class="slider round"></span>
+          </label>
+       
+      </p>
+
+      <!-- <div class="box"> -->
+      <div id="demo"> 
         
-    </div>
-
-    <!-- Button to add more books -->
-
-    <div class="addBook">
-        <button class="button"> <span>Add a new book</span></button>
-    </div>
+      </div>
+    <!-- </div> -->
+    </form>
 
 
+  </div>
+
+</div>
+
+<div id="displayItems"></div>
 
 
-
-
-    
-    <div class="footer">
-        <p>Copyrights 2021</p>
-    </div>
-    <script src="app.js"></script>
+      <script src="app.js"></script>
 </body>
 </html>
